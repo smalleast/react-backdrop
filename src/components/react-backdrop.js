@@ -1,16 +1,15 @@
 import './style.scss';
 import documentAppend from 'react-document-append';
-import classNames from 'classnames';
 import noop from 'noop';
 
 class Backdrop extends React.Component{
   static propTypes = {
-    visible:React.PropTypes.bool,
-    style:React.PropTypes.object,
-    className:React.PropTypes.string,
-    onHidden:React.PropTypes.func,
-    onShown:React.PropTypes.func,
-    onClick:React.PropTypes.func,
+    visible:PropTypes.bool,
+    style:PropTypes.object,
+    className:PropTypes.string,
+    onHidden:PropTypes.func,
+    onShown:PropTypes.func,
+    onClick:PropTypes.func,
   }
 
   static defaultProps = {
